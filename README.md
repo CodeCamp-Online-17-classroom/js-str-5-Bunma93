@@ -1,12 +1,8 @@
 # js-lab-84
-### Lab84 String: การตรวจสอบข้อความ
-จงเขียนฟังก์ชันเพื่อตรวจสอบข้อความ หากในข้อความนั้นมีคำว่า xxx, sex, porn ให้ return ค่าเป็น true แต่ถ้าไม่มีให้ return ค่าเป็น false
-ให้ตรวจสอบแบบ case-insensitive เช่น XXX, pOrn, sEX ให้ถือว่าเป็นคำเดียวกับ  xxx, porn, sex ตามลำดับ
-
+### Lab85 String: การตัดข้อความ
+จงเขียนฟังก์ชัน truncate(str, length) เพื่อตัดข้อความ ถ้าหากข้อความมีความยาวมากกว่ากำหนด ให้ตัดความยาวของข้อความให้เท่ากับความยาวที่กำหนดแล้วต่อท้ายด้วย …
+#### ถ้าความยาวข้อความสั้นกว่าความยาวที่กำหนดให้ return เป็นข้อความเดิม
 ```JavaScript
-let text1 = "This is a sample text containing the word XXX.";
-console.log(containsSensitiveWords(text1)); //true
-
-let text2 = "This is a sample text without any sensitive words.";
-console.log(containsSensitiveWords(text2)); //false
+truncate("What I'd like to tall on this topic is:", 20); // What I'd like to te...
+truncate("Hi everyone!", 20); // Hi everyone!
 ```
